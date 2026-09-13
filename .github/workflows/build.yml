@@ -26,6 +26,9 @@ jobs:
       - name: Enable Web
         run: flutter config --enable-web
 
+      - name: Generate web platform
+        run: flutter create --org com.example --project-name haoshi_web --platforms=web .
+
       - name: Install dependencies
         run: flutter pub get
 
