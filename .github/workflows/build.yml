@@ -33,7 +33,7 @@ jobs:
         run: flutter pub get
 
       - name: Build Web
-        run: flutter build web --release --base-href="/guushi-web/" --no-pwa
+        run: flutter build web --release --base-href="/guushi-web/"
 
       - name: Upload Web
         uses: actions/upload-artifact@v4
